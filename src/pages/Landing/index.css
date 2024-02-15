@@ -5,7 +5,7 @@
 }
 
 .landing {
-  color: #ffffff;
+  color: var(--text-color);
   text-align: center;
 }
 
@@ -14,7 +14,21 @@
 }
 
 .carousel {
-  background: linear-gradient(#00C2FF, #254FBB);
+  background: linear-gradient(#00c2ff, #254fbb);
   background-clip: text;
   color: transparent;
+  font-size: 3rem;
+}
+
+.landing-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 72rem) {
+  .carousel {
+    font-size: 2rem;
+  }
 }

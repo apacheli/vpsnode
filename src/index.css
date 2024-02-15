@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 
 :root {
-  --background-color: #1c2024;
+  --background-color: #0d1924;
   --duration: .125s;
   --text-color: #ffffff;
   --theme-color: #00c2ff;
+  --header-color: #000000;
 }
 
 html {
@@ -29,4 +30,13 @@ a {
 
 p {
   margin: 0;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --theme-color: #254fbb;
+    --header-color: #f0f0f0;
+  }
 }

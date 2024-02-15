@@ -7,7 +7,9 @@ function Header() {
   return (
     <>
       <header className="header">
-        <img src="/logo_with_title.png" height="90%" />
+        <a href="/" style={{ height: "100%" }}>
+          <img src="/logo_with_title.png" height="100%" />
+        </a>
 
         <input type="checkbox" id="nav-checkbox" />
         <label htmlFor="nav-checkbox" className="nav-button">

@@ -8,7 +8,7 @@ function Footer() {
           <a className="open-panel open-panel-footer" href="/">Open Panel</a>
           <div className="credits">
             <p>© 2024-present VPSNode. All rights reserved.</p>
-            <p>Designed by Jimmy and Landen</p>
+            <p>Designed by Jimmy Vang and Landen Stephens</p>
           </div>
         </div>
         <nav className="footer-navigation">
@@ -28,6 +28,7 @@ function Footer() {
           </ul>
           <ul className="footer-navigation-list">
             <p>Resources</p>
+            <li><a href="/">Branding</a></li>
             <li><a href="/">Developers</a></li>
             <li><a href="/">News</a></li>
             <li><a href="/">Our Partners</a></li>
