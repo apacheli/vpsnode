@@ -8,7 +8,8 @@ function Header() {
     <>
       <header className="header">
         <a href="/" style={{ height: "100%" }}>
-          <img src="/logo_with_title.png" height="100%" />
+          <img src="/logo_light.png" height="100%" className="logo-light" />
+          <img src="/logo.png" height="100%" className="logo-dark" />
         </a>
 
         <input type="checkbox" id="nav-checkbox" />
