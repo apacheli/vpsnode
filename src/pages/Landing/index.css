@@ -1,13 +1,20 @@
 .page-content {
   margin: 8rem auto 0;
   max-width: 90%;
-  width: 48rem;
+  width: 64rem;
 }
 
 .landing {
   color: #ffffff;
+  text-align: center;
 }
 
-.landing span {
-  color: var(--theme-color);
+.landing h1 {
+  margin: 0;
+}
+
+.carousel {
+  background: linear-gradient(#00C2FF, #254FBB);
+  background-clip: text;
+  color: transparent;
 }

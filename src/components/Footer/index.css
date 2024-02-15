@@ -46,7 +46,17 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 1rem;
+}
+
+ul p {
+  margin-bottom: .5rem;
+}
+
+.credits {
+  margin-top: 1rem;
+  text-align: center;
 }
 
 @media (max-width: 36rem) {

@@ -7,7 +7,7 @@ function Header() {
   return (
     <>
       <header className="header">
-        <img src="/LOGO_WITH_TITLE.png" height="90%" />
+        <img src="/logo_with_title.png" height="90%" />
 
         <input type="checkbox" id="nav-checkbox" />
         <label htmlFor="nav-checkbox" className="nav-button">

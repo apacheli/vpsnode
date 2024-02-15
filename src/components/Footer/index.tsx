@@ -6,8 +6,10 @@ function Footer() {
       <div className="footer">
         <div className="footer-text">
           <a className="open-panel open-panel-footer" href="/">Open Panel</a>
-          <p>© 2024-present VPSNode. All rights reserved.</p>
-          <p>Designed by Jimmy and Landen</p>
+          <div className="credits">
+            <p>© 2024-present VPSNode. All rights reserved.</p>
+            <p>Designed by Jimmy and Landen</p>
+          </div>
         </div>
         <nav className="footer-navigation">
           <ul className="footer-navigation-list">
@@ -36,6 +38,9 @@ function Footer() {
             <p>Hosting</p>
             <li><a href="/">Minecraft</a></li>
             <li><a href="/">Discord Bots</a></li>
+            <li><a href="/">Satisfactory</a></li>
+            <li><a href="/">Palworld</a></li>
+            <li><a href="/">Counter-Strike 2</a></li>
           </ul>
         </nav>
       </div>

@@ -13,19 +13,14 @@ function CarouselText({ items, intervalTime }: CarouselTextProps) {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
-    const loopInterval = setInterval(() => {
-      console.log("Changing text");
-      if (!items[current + 1]) {
-        setCurrent(0);
-      } else {
-        setCurrent(current + 1);
-      }
-    }, intervalTime);
+    const loopInterval = setInterval(() => (
+      setCurrent(current === items.length - 1 ? 0 : current + 1)
+    ), intervalTime);
 
     return () => clearInterval(loopInterval);
   });
 
-  return <span>{items[current]}</span>;
+  return <h1 className="carousel">{items[current]}</h1>;
 }
 
 function Landing() {
@@ -34,15 +29,12 @@ function Landing() {
       <Header />
       <div className="page-content">
         <header className="landing">
-          <img src="/logo192.png" />
-          <h1>
-            The perfect hosting provider for{" "}
-            <CarouselText
-              items={["Minecraft", "Satisfactory", " Discord Bots"]}
-              intervalTime={3500}
-            />
-          </h1>
-          <a>Get Started</a>
+          <img src="/logo256.png" />
+          <h1>The perfect hosting provider for</h1>
+          <CarouselText
+            items={["Minecraft", "Discord Bots", "Satisfactory", "Palworld", "Counter-Strike 2"]}
+            intervalTime={2500}
+          />
         </header>
       </div>
       <Footer />
